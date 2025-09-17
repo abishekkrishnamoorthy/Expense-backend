@@ -5,11 +5,7 @@ const cors = require("cors");
 require("dotenv").config();
 const app=express()
 app.use(cors());
-app.use(cors({
-  origin: "https://expense-backend-ylod.onrender.com",  
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
+app.use(cors());
    
 
 connectDB(); 
